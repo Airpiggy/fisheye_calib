@@ -12,7 +12,6 @@ D = calib_data["dist_coeffs"]
 frame_width = int(calib_data["frame_width"])
 frame_height = int(calib_data["frame_height"])
 frame_size = (frame_width, frame_height)
-print(type(frame_height))
 print("successfully load calibration file data")
 
 K_new = cv2.fisheye.estimateNewCameraMatrixForUndistortRectify(K=K, 
